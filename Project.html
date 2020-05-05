@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+   </style>
+</head>
+
+<!-- ON LOAD OF THE PAGE, THE CLOCK WILL START TICKING. -->
+<body onload="digitized();">
+    <div style="background-color:#F3F3F3;
+        max-width:220px;width:100%;margin:0 auto;padding:20px;">
+
+        <table class="tabBlock" align="center" cellspacing="0" cellpadding="0" border="0">
+            <tr><td class="clock" id="dc"></td>  <!-- THE DIGITAL CLOCK. -->
+                <td>
+                    <table cellpadding="0" cellspacing="0" border="0">
+                    
+                        <!-- HOUR IN 'AM' AND 'PM'. -->
+                        <tr><td class="clocklg" id="dc_hour"></td></tr>
+
+                        <!-- SHOWING SECONDS. -->
+                        <tr><td class="clocklg" id="dc_second"></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<script>
+    // OUR FUNCTION WHICH IS EXECUTED ON LOAD OF THE PAGE.
+    function digitized() {
+        var dt = new Date();    // DATE() CONSTRUCTOR FOR CURRENT SYSTEM DATE AND TIME.
+        var hrs = dt.getHours();
+        var min = dt.getMinutes();
+        var sec = dt.getSeconds();
+
+        min = Ticking(min);
+        sec = Ticking(sec);
+
+        document.getElementById('dc').innerHTML = hrs + ":" + min;
+        document.getElementById('dc_second').innerHTML = sec;
+
+        if (hrs > 12) { 
+            document.getElementById('dc_hour').innerHTML = 'PM'; 
+        }
+        else { 
+            document.getElementById('dc_hour').innerHTML = 'AM'; 
+        }
+
+        // CALL THE FUNCTION EVERY 1 SECOND (RECURSION).
+        var time
+        time = setInterval('digitized()', 1000);
+    }
+
+    function Ticking(ticVal) {
+        if (ticVal < 10) {
+            ticVal = "0" + ticVal;
+        }
+        return ticVal;
+    }
+</script>
+<head>
+<title>The ReSale Shop Boutique</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="Shopping, Resale, Women’s Shopping, Free Shipping, Dress, Shoes, Women’s Clothing, Buy Now">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <nav>
+      <ul>
+         <li><a href="project.html">Home</a></li>
+       <li><a href="gallery.html">All Items for Sale Photo Gallery</a></li>
+            <li><a href="buy.html">Buy It Now!</a></li>
+            <li><a href="cart.html">Your Shopping Cart</a></li>
+        </ul>
+    </nav>
+</head>
+<body>
+  <style>
+      .img-container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+    <h3>Welcome to my resale boutique!. My page is all about the resale of highly discounted fashion merchandise in "Buy it Now" style sales.</h3>
+    
+    <img src="img_50off.jpg" alt="promo" class="img">
+    <img src="img_denim.jpg" alt="denim" class="img">
+      <img src="img_dresses.jpg" alt="dresses" class="img">
+      <img src="img_shoes.jpg" alt="shoes" class="img">
+      <img src="img_tops.jpg" alt="tops" class="img">
+      <img src="img_jumpsuit.jpg" alt="jumpsuit" class="img">
+      <img src="img_footer.jpg" alt="footer" class="img">
+    </div>
+     <footer>
+      <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us!</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

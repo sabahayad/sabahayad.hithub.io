@@ -1,0 +1,278 @@
+/* sizes optimized for: >961, <=960, <=768, <=480, <=320 */
+
+/*
+
+Sabah Ayad
+Project 9
+May 4, 2020
+CSCI 1145 
+
+@media only all and (min-width: 1100px) {
+body {
+	font-family: Verdana, Century Gothic, Arial, sans-serif;
+	color:#462324;
+	font-size:1em;
+	/*background-image:url(images/background.png);
+	background-repeat:repeat-y;
+	background-size:100%;
+	background-color:#6F103A;
+	background-color:pink;*/
+	margin:0px;
+	}
+/*Javascript Clock*/
+
+<head>
+    <title>Digital Clock using JavaScript</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css"/>
+
+    <style>
+        .tabBlock
+        {
+            background-color:#FFB6C1;
+            border:solid 0px #FFB6C1;
+            border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;
+            max-width:200px;
+            width:100%;
+            overflow:hidden;
+            display:block;
+        }
+        .clock
+        {
+            vertical-align:middle;
+            font-family:Orbitron;
+            font-size:40px;
+            font-weight:normal;
+            color:#FFB6C1;
+            padding:0 10px;
+        }
+        .clocklg 
+        {
+            vertical-align:middle; 
+            font-family:Orbitron;
+            font-size:20px;
+            font-weight:normal;
+            color:#FFB6C1;
+        }
+
+ /*End of Javascript Clock*/
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+	
+h2  {
+	
+	font-weight:normal;
+	}
+	
+h3  {
+	
+	font-weight:normal;
+	}		
+	
+img  {
+		border:none;
+		}
+
+	{
+	margin-left:150px;
+	font-family: univers 55, Verdana, Arial, Sans-serif;
+	font-size:3em;
+	font-weight:normal;
+}
+	
+
+/* end site header */
+
+/* begin image positioning */
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+}
+
+/* begin site contact form */
+
+ * {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* end site contact form */
+
+	
+/* begin site navigation */
+nav  {
+	background-color:#FFB6C1;
+	color:#FF1493;
+	margin-left:35px;
+	margin-right:35px;
+	text-align:center;
+	margin-top:0px;
+	margin-bottom:0px;
+	height:28px;
+		}
+
+nav a:link {
+	background-color:#FFB6C1 ;
+	color:#FF1493 ;
+	padding-left:4px;
+	padding-right:4px;
+	padding-top:0px;
+	padding-bottom:2px;
+	}
+	
+nav a:visited {
+	background-color:#FFB6C1 ;
+	color:#FF1493 ;
+	padding-left:4px;
+	padding-right:4px;
+	padding-top:0px;
+	padding-bottom:2px;
+	}
+	
+nav a:hover {
+	background-color:#FFB6C1 ;
+	color:#FF1493 ;
+	padding-left:4px;
+	padding-right:4px;
+	padding-top:0px;
+	padding-bottom:2px;
+	}
+			
+nav ul    {
+	list-style-type:none;
+	padding-top:2px;
+	}
+	
+nav li    {
+	display:inline;
+	margin-right:10px;
+	
+	}
+/* end site navigation */
+/* end main */
+/* begin site footer */
+footer {
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	font-size:.75em;
+	text-align:center;
+	background-color:#FFB6C1;
+	padding-bottom:200px;
+	}
+
+footer hr  {
+	color:#FF1493;
+	width:80%;
+	border-width:1px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+footer ul    {
+	color:#FF1493 ;
+	padding-left:4px;
+	padding-right:4px;
+	padding-top:0px;
+	padding-bottom:2px;
+	}
+	
+footer li    {
+	display:inline;
+	margin-right:10px;
+	
+	}
+
+footer a:link {
+	color:#FF1493 ;
+	padding-left:4px;
+	padding-right:4px;
+	padding-top:0px;
+	padding-bottom:2px;
+	}
+	
+footer a:visited {
+	color:#FF1493 ;
+	padding-left:4px;
+	padding-right:4px;
+	padding-top:0px;
+	padding-bottom:2px;
+	}
+	
+footer a:hover {
+	background-color:#FFB6C1 ;
+	color:#fdfbf4 ;
+	padding-left:4px;
+	padding-right:4px;
+	padding-top:0px;
+	padding-bottom:2px;
+	}		
+
+.closeBackground {
+	width:100%;
+	margin-left:0px;
+	margin-right:0px;
+	padding-left:0px;
+	padding-right:0px;
+	border:0px;
+	}
+/* end site footer */
+
+
